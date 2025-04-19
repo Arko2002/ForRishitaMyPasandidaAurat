@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>You Are Beautiful!</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You Are Beautiful!</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Hey You!</h1>
-        <p class="message">Just wanted to remind you that you are beautiful and cute!</p>
-        <button class="btn" id="complimentButton" aria-label="Get a new compliment">Get a Compliment</button>
-        <div class="compliment" id="compliment"></div>
-        <div class="heart-container" id="heartContainer"></div>
-    </div>
-    <script src="script.js"></script>
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="Perfect.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Background Color Divs (For Animations) -->
+  <div id="backgrounds">
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
+    <div class="bg bg6"></div>
+    <div class="bg bg7"></div>
+    <div class="bg bg8"></div>
+  </div>
+
+  <div class="particles" id="particles"></div>
+  
+
+  <!-- Main Content -->
+  <div class="container" id="container">
+    <h1 class="title">Hey Rishita!</h1>
+    <p class="message">Just wanted to remind you that you are beautiful and perfect!</p>
+    <button class="btn" id="complimentButton">Get a Compliment</button>
+    <div class="compliment" id="compliment"></div>
+    <div class="heart-container" id="heartContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
